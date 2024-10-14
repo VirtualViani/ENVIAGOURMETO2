@@ -1,4 +1,5 @@
-<style>
+{% style %}
+
   .custom-image {
     display: block;
     max-width: 100%;
@@ -8,7 +9,6 @@
 
   .custom-button {
     display: inline-block;
-    background-color: #007bff;
     color: white;
     font-size: 16px;
     padding: 10px 20px;
@@ -26,7 +26,7 @@
   .custom-button:hover {
     background-color: #0056b3;
   }
-</style>
+{% endstyle %}
 
 
 {% for block in section.blocks %}
@@ -36,7 +36,7 @@
       src="{{ block.settings.imageno | img_url: 'large' }}"
       alt="Custom Image">
   {% endif %}
-  <button class="custom-button">
+  <button class="custom-button" style="background-color: {{ block.settings.button_bg_color }}; color: {{ block.settings.button_text_color }};">
     <p>{{ block.settings.textoB }}</p>
   </button>
 
@@ -78,6 +78,16 @@
             "type": "text",
             "id": "textoB",
             "label": "Texto Button"
+          }, {
+            "type": "color",
+            "id": "button_bg_color",
+            "label": "Button Background Color",
+            "default": "#007bff"
+          }, {
+            "type": "color",
+            "id": "button_text_color",
+            "label": "Button Text Color",
+            "default": "#ffffff"
           }
         ]
       }
