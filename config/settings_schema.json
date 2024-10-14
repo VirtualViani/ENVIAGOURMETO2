@@ -1471,10 +1471,10 @@
     "settings": [{
       "type": "range",
         "id": "page_widtho",
-        "label": "Page_widthp",
+        "label": "Page widthp",
         "default": 1200,
-        "min": 10,
-        "max": 1200,
+        "min": 20,
+        "max": 1600,
         "step": 50
 
     }]
