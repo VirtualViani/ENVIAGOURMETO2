@@ -51,7 +51,7 @@
 
 
 {% for block in section.blocks %}
-  <div class="image-container {{ block.settings.custom_class }}" id="image-container-{{ block.id }}">
+  <div class="image-container-{{ block.settings.custom_class }}" id="image-container-{{ block.id }}">
     {% if block.settings.imageno %}
       <img
         class="custom-image"
