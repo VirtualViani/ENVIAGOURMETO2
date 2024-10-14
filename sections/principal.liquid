@@ -1,6 +1,6 @@
 {% for block in section.blocks %}
-  {% if section.settings.imageno %}
-    <img src="{{ section.settings.imageno | img_url: 'large' }}" alt="Custom Image">
+  {% if block.settings.imageno %}
+    <img src="{{ block.settings.imageno | img_url: 'large' }}" alt="Custom Image">
   {% endif %}
   <button>
     <p>{{ block.settings.textoB }}</p>
@@ -16,10 +16,6 @@
     "tag": "section",
     "settings": [
       {
-        "type": "image_picker",
-        "id": "imageno",
-        "label": "upload ima"
-      }, {
         "type": "range",
         "id": "logo_width",
         "label": "Logo width",
@@ -40,6 +36,11 @@
         "type": "ui",
         "settings": [
           {
+            "type": "image_picker",
+            "id": "imageno",
+            "label": "upload ima"
+          }, {
+
             "type": "text",
             "id": "textoB",
             "label": "Texto Button"
