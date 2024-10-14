@@ -47,7 +47,7 @@
   {% if block.settings.imageno %}
     <img
       class="custom-image"
-      src="{{ block.settings.imageno | image_url: 'large' }}"
+      src="{{ block.settings.imageno | img_url: 'large' }}"
       alt="Custom Image">
   {% endif %}
   <button class="custom-button" style="--button-bg-color: {{ block.settings.button_bg_color }}; --button-text-color: {{ block.settings.button_text_color }}; --button-position: {{ block.settings.button_position }}; border-radius:{{ block.settings.redondeao }}px;">
