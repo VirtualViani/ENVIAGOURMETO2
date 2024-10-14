@@ -1466,17 +1466,5 @@
       }
     ]
   },
-  {
-    "name": "Config Encabezao",
-    "settings": [{
-      "type": "range",
-        "id": "page_widtho",
-        "label": "Page widthp",
-        "default": 1200,
-        "min": 24,
-        "max": 1600,
-        "step": 101
 
-    }]
-  }
 ]
