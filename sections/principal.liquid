@@ -13,7 +13,6 @@
     font-size: 16px;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     /* Adjust for pill or square shape */
     cursor: pointer;
     text-align: center;
@@ -36,7 +35,7 @@
       src="{{ block.settings.imageno | img_url: 'large' }}"
       alt="Custom Image">
   {% endif %}
-  <button class="custom-button" style="background-color: {{ block.settings.button_bg_color }}; color: {{ block.settings.button_text_color }};">
+  <button class="custom-button" style="background-color: {{ block.settings.button_bg_color }}; color: {{ block.settings.button_text_color }}; border-radius:{{block.settings.redondeao}}">
     <p>{{ block.settings.textoB }}</p>
   </button>
 
@@ -73,21 +72,32 @@
             "type": "image_picker",
             "id": "imageno",
             "label": "upload ima"
-          }, {
+          },
+          {
 
             "type": "text",
             "id": "textoB",
             "label": "Texto Button"
-          }, {
+          },
+          {
             "type": "color",
             "id": "button_bg_color",
             "label": "Button Background Color",
             "default": "#007bff"
-          }, {
+          },
+          {
             "type": "color",
             "id": "button_text_color",
             "label": "Button Text Color",
             "default": "#ffffff"
+          }, {
+            "type": "range",
+            "id": "redondeao",
+            "label": "RoundButton",
+            "default": 5,
+            "min": 1,
+            "max": 12,
+            "step": 1
           }
         ]
       }
