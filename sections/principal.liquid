@@ -1,7 +1,7 @@
 {% for block in section.blocks %}
 
   <button>
-    <p>{{ block.settings.text }}</p>
+    <p>{{ block.settings.textoB }}</p>
   </button>
 
 {% endfor %}
@@ -35,12 +35,12 @@
     "blocks": [
       {
         "name": "BotonImg",
-        "type": "text",
+        "type": "ui",
         "settings": [
           {
             "type": "text",
-            "id": "textoBoton",
-            "label": "texto Button"
+            "id": "textoB",
+            "label": "Texto Button"
           }
         ]
       }
