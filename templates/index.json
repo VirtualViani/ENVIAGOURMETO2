@@ -24,7 +24,9 @@
             "button_position": "absolute",
             "button_overlap": false,
             "button_top": 86,
-            "button_left": 50
+            "button_left": 50,
+            "image_width": 100,
+            "image_height": 28
           }
         },
         "ui_B3jP8U": {
@@ -39,7 +41,9 @@
             "button_position": "absolute",
             "button_overlap": false,
             "button_top": 81,
-            "button_left": 50
+            "button_left": 50,
+            "image_width": 100,
+            "image_height": 16
           }
         },
         "ui_xycygx": {
@@ -54,7 +58,9 @@
             "button_position": "absolute",
             "button_overlap": false,
             "button_top": 78,
-            "button_left": 50
+            "button_left": 50,
+            "image_width": 100,
+            "image_height": 11
           }
         },
         "ui_RzML8r": {
@@ -69,7 +75,9 @@
             "button_position": "absolute",
             "button_overlap": false,
             "button_top": 75,
-            "button_left": 50
+            "button_left": 50,
+            "image_width": 100,
+            "image_height": 15
           }
         }
       },
