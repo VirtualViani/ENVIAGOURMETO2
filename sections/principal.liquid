@@ -1,5 +1,5 @@
 {% for block in section.blocks %}
-  {% if section.settings.custom_image %}
+  {% if section.settings.imageno %}
     <img src="{{ section.settings.imageno | img_url: 'large' }}" alt="Custom Image">
   {% endif %}
   <button>
@@ -18,7 +18,7 @@
       {
         "type": "image_picker",
         "id": "imageno",
-        "label": "Logo"
+        "label": "upload ima"
       }, {
         "type": "range",
         "id": "logo_width",
