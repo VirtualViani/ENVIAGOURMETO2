@@ -1,5 +1,7 @@
 {% for block in section.blocks %}
-
+  {% if section.settings.custom_image %}
+    <img src="{{ section.settings.imageno | img_url: 'large' }}" alt="Custom Image">
+  {% endif %}
   <button>
     <p>{{ block.settings.textoB }}</p>
   </button>
@@ -15,7 +17,7 @@
     "settings": [
       {
         "type": "image_picker",
-        "id": "logo",
+        "id": "imageno",
         "label": "Logo"
       }, {
         "type": "range",
