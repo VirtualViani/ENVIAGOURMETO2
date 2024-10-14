@@ -1473,9 +1473,9 @@
         "id": "page_widtho",
         "label": "Page widthp",
         "default": 1200,
-        "min": 20,
+        "min": 24,
         "max": 1600,
-        "step": 8
+        "step": 4
 
     }]
   }
