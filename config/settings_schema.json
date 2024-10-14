@@ -1465,5 +1465,18 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Config Encabezao",
+    "settings": [{
+      "type": "range",
+        "id": "page_width",
+        "label": "Page_width",
+        "default": 1200,
+        "min": 10,
+        "max": 1300,
+        "step": 50
+
+    }]
   }
 ]
