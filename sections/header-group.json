@@ -29,16 +29,9 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "principal_gxPhbt": {
-      "type": "principal",
-      "settings": {
-        "logo_width": 12
-      }
     }
   },
   "order": [
-    "header",
-    "principal_gxPhbt"
+    "header"
   ]
 }
