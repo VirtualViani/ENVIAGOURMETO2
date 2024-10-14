@@ -51,10 +51,10 @@
 
 
 {% for block in section.blocks %}
-  <div class="image-container" id="image-container-{{ block.id }}">
+  <div class="image-container">
     {% if block.settings.imageno %}
       <img
-        class="custom-image"
+        class="custom-image{{ block.settings.custom_class }}"
         src="{{ block.settings.imageno | img_url: 'large' }}"
         alt="Custom Image">
     {% endif %}
@@ -156,6 +156,11 @@
             "min": 0,
             "max": 100,
             "step": 1
+          }, {
+            "type": "text",
+            "id": "custom_class",
+            "label": "Custom Class Name",
+            "default": ""
           }
         ]
       }
