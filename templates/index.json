@@ -16,13 +16,14 @@
           "type": "ui",
           "settings": {
             "imageno": "shopify://shop_images/Quesos.png",
-            "textoB": "",
-            "button_bg_color": "#007bff",
+            "custo": "quesos",
+            "textoB": "Quesos",
+            "button_bg_color": "#494e2d",
             "button_text_color": "#ffffff",
             "redondeao": 24,
             "button_position": "absolute",
             "button_overlap": false,
-            "button_top": 50,
+            "button_top": 86,
             "button_left": 50
           }
         },
@@ -30,13 +31,14 @@
           "type": "ui",
           "settings": {
             "imageno": "shopify://shop_images/Cheese_club.png",
-            "textoB": "",
-            "button_bg_color": "#007bff",
+            "custo": "Cloob",
+            "textoB": "Cheese Club",
+            "button_bg_color": "#494e2d",
             "button_text_color": "#ffffff",
             "redondeao": 24,
             "button_position": "absolute",
             "button_overlap": false,
-            "button_top": 50,
+            "button_top": 81,
             "button_left": 50
           }
         },
@@ -44,13 +46,14 @@
           "type": "ui",
           "settings": {
             "imageno": "shopify://shop_images/vinos.png",
-            "textoB": "",
-            "button_bg_color": "#007bff",
+            "custo": "vinos",
+            "textoB": "Vinos",
+            "button_bg_color": "#494e2d",
             "button_text_color": "#ffffff",
             "redondeao": 24,
             "button_position": "absolute",
             "button_overlap": false,
-            "button_top": 50,
+            "button_top": 78,
             "button_left": 50
           }
         },
@@ -58,13 +61,14 @@
           "type": "ui",
           "settings": {
             "imageno": "shopify://shop_images/regalosExperiencias.png",
-            "textoB": "",
-            "button_bg_color": "#007bff",
+            "custo": "regaYexp",
+            "textoB": "Regalos y experiencias",
+            "button_bg_color": "#494e2d",
             "button_text_color": "#ffffff",
             "redondeao": 24,
             "button_position": "absolute",
             "button_overlap": false,
-            "button_top": 50,
+            "button_top": 75,
             "button_left": 50
           }
         }
