@@ -1,6 +1,11 @@
-<button>
-  <h1>{{ section.settings.textoBoton }}</h1>
-</button>
+{% for block in section.blocks %}
+
+  <button>
+    <p>{{ block.settings.text }}</p>
+  </button>
+
+{% endfor %}
+
 
 {% schema %}
   {
@@ -9,10 +14,6 @@
     "tag": "section",
     "settings": [
       {
-        "type": "text",
-        "id": "textoBoton",
-        "label": "texto Pal Buttn"
-      }, {
         "type": "image_picker",
         "id": "logo",
         "label": "Logo"
@@ -29,6 +30,19 @@
     "presets": [
       {
         "name": "GRID BUTTN-IMGS"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "BotonImg",
+        "type": "text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "textoBoton",
+            "label": "texto Button"
+          }
+        ]
       }
     ]
   }
