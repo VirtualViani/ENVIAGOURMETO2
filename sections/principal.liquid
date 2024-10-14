@@ -54,7 +54,7 @@
   <div class="image-container">
     {% if block.settings.imageno %}
       <img
-        class="custom-image{{ block.settings.custom_class }}"
+        class="custom-image {{ block.settings.custom_class }}"
         src="{{ block.settings.imageno | img_url: 'large' }}"
         alt="Custom Image">
     {% endif %}
