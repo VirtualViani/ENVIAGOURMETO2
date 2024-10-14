@@ -1,12 +1,20 @@
-<h1>xD</h1>
+<h1>xd</h1>
+
+<button>
+  {{ section.settings.textoBoton }}
+</button>
 
 {% schema %}
   {
     "name": "Bienvenida",
     "class": "inicioPag",
+    "tag": "section",
     "settings": [
-
       {
+        "type": "text",
+        "id": "textoBoton",
+        "label": "textoPalButtn"
+      }, {
         "type": "image_picker",
         "id": "logo",
         "label": "Logo"
